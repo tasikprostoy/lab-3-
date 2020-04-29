@@ -1,15 +1,23 @@
 package model;
 
+import enums.DeviceType;
 
-public class Resistor {
+public class Resistor extends Component {
 	private double resist;
 	
     public Resistor() {
 		
 	}
 	
-	public Resistor(double resist) {
+	public Resistor(String producer, int power, DeviceType deviceType, 
+			double maxVoltage, boolean isWorking, double resist) {
+		super(producer, power, deviceType, maxVoltage, isWorking);
 		this.resist = resist;
+	}
+    
+	@Override
+	public String toString() {
+		return "Resistor [resist=" + resist + "]";
 	}
 
 	public double getResist() {

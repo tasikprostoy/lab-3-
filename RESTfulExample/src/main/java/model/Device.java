@@ -2,7 +2,7 @@ package model;
 
 import enums.DeviceType;
 
-public class Device {
+public abstract class Device {
 	private String producer;
 	private int power;
 	private DeviceType deviceType; 
@@ -17,6 +17,11 @@ public class Device {
 		this.deviceType = deviceType;
 	}
 	
+	@Override
+	public String toString() {
+		return "Device [producer=" + producer + ", power=" + power + ", deviceType=" + deviceType + "]";
+	}
+
 	public String getProducer() {
 		return producer;
 	}

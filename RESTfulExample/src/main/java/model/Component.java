@@ -1,7 +1,8 @@
 package model;
 
+import enums.DeviceType;
 
-public class Component {
+public abstract class Component extends Device {
 	private double maxVoltage;
 	private boolean isWorking;
 	
@@ -9,12 +10,19 @@ public class Component {
 		
 	}
 	
-	public Component(double maxVoltage, boolean isWorking) {
+	public Component(String producer, int power, DeviceType deviceType, 
+			double maxVoltage, boolean isWorking) {
+		super(producer, power, deviceType);
 		this.maxVoltage = maxVoltage;
 		this.isWorking = isWorking;
 		
 	}
 	
+	@Override
+	public String toString() {
+		return "Component [maxVoltage=" + maxVoltage + ", isWorking=" + isWorking + "]";
+	}
+
 	public double getMaxVoltage() {
 		return maxVoltage;
 	}
