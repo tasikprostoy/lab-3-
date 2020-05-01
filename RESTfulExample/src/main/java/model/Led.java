@@ -10,9 +10,9 @@ public class Led extends Component {
 		
 	}
 
-	public Led(String producer, int power, DeviceType deviceType, 
+	public Led(String producer, int power, 
 			double maxVoltage, boolean isWorking, Color color) {
-		super(producer, power, deviceType, maxVoltage, isWorking);
+		super(producer, power, DeviceType.LED, maxVoltage, isWorking);
 		this.color = color;
 	}
 	

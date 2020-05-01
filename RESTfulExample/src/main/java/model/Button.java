@@ -13,9 +13,9 @@ public class Button extends Component {
 
 	}
 	
-	public Button(String producer, int power, DeviceType deviceType, 
+	public Button(String producer, int power,  
 			double maxVoltage, boolean isWorking, ButtonType type, Color color) {
-		super(producer, power, deviceType, maxVoltage, isWorking);
+		super(producer, power, DeviceType.BUTTON, maxVoltage, isWorking);
 	    this.type = type;
 	    this.color = color;
 	    

@@ -13,9 +13,9 @@ public class MicroControler extends Device  {
 		
 	}
 	
-	public MicroControler(String producer, int power, DeviceType deviceType, 
+	public MicroControler(String producer, int power, 
 			Voltage inputVoltage, List<Component> connectedComponents) {
-		super(producer, power, deviceType);
+		super(producer, power, DeviceType.MICROCONTROLER);
 		this.inputVoltage = inputVoltage; 
 		this.connectedComponents = connectedComponents;
 }

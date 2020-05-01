@@ -9,9 +9,9 @@ public class Resistor extends Component {
 		
 	}
 	
-	public Resistor(String producer, int power, DeviceType deviceType, 
+	public Resistor(String producer, int power, 
 			double maxVoltage, boolean isWorking, double resist) {
-		super(producer, power, deviceType, maxVoltage, isWorking);
+		super(producer, power, DeviceType.RESISTOR, maxVoltage, isWorking);
 		this.resist = resist;
 	}
     
