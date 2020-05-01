@@ -1,4 +1,3 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.junit.jupiter.api.Test;
@@ -12,19 +11,16 @@ public class DeviceManagerTest {
 	@Test
 	public void testSortByProducer() {
 		assertNull(manager.sortByProducer(SortingType.ASC));
-
 	}
 	
 	@Test
 	public void testSortByPower() {
 		assertNull(manager.sortByPower(SortingType.ASC));
-
 	}
 	
 	@Test
 	public void testFilterByType() {
 		assertNull(manager.filterByType(DeviceType.LED));
-
 	}
 	
 }
