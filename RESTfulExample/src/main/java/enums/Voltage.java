@@ -1,6 +1,5 @@
 package enums;
 
 public enum Voltage {
-	THREE_DOT_THREE, FIVE
-
+    THREE_DOT_THREE, FIVE
 }
