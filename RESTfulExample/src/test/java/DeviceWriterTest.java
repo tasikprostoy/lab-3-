@@ -22,9 +22,7 @@ public class DeviceWriterTest {
 	
 		devices.add(new Led("Predator", 45, 5.5, true, Color.BLUE));
 		devices.add(new Led("Predator", 63, 6.9, false, Color.GREEN));
-		devices.add(new Button("Pikchu", 32,  5.4, true, ButtonType.PULL_DOWN, Color.BLACK));
 		devices.add(new Resistor("Malecha", 25, 1.8, true, 300));
-		devices.add(new Button("Pikachu", 23,  5.1, false, ButtonType.PULL_UP, Color.RED));
 		devices.add(new Led("Lola", 76, 5.3, true, Color.YELLOW));
 		
 	 }
