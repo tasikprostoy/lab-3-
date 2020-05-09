@@ -20,6 +20,16 @@ public class Button extends Component {
         this.type = type;
         this.color = color;
     }
+    
+    @Override
+    public String getHeaders() {
+    	return super.getHeaders() + ", type, color";
+	}
+    
+    @Override
+    public String toCSV() {
+    	return super.toCSV() + "," + type.toString() + "," + color.toString();
+    }
 
     @Override
     public final String toString() {

@@ -17,6 +17,12 @@ public abstract class Device {
         this.power = power;
         this.deviceType = deviceType;
     }
+    public String getHeaders() {
+    	return "producer, power, deviceType";
+	}
+    public String toCSV() {
+    	return producer + "," + power + "," + deviceType.toString();
+    }
 
     public final String getProducer() {
         return producer;

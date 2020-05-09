@@ -1,0 +1,12 @@
+producer, power, deviceType, maxVoltage, isWorking, color
+Predator,45,LED,5.5,true,BLUE
+producer, power, deviceType, maxVoltage, isWorking, color
+Predator,63,LED,6.9,false,GREEN
+producer, power, deviceType, maxVoltage, isWorking, type, color
+Pikchu,32,BUTTON,5.4,true,PULL_DOWN,BLACK
+producer, power, deviceType, maxVoltage, isWorking, resist
+Malecha,25,RESISTOR,1.8,true,300.0
+producer, power, deviceType, maxVoltage, isWorking, type, color
+Pikachu,23,BUTTON,5.1,false,PULL_UP,RED
+producer, power, deviceType, maxVoltage, isWorking, color
+Lola,76,LED,5.3,true,YELLOW

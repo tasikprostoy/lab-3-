@@ -18,7 +18,17 @@ public class MicroControler extends Device  {
         super(producer, power, DeviceType.MICROCONTROLER);
         this.inputVoltage = inputVoltage;
         this.connectedComponents = connectedComponents;
-}
+    }
+    
+    @Override
+    public String getHeaders() {
+    	return super.getHeaders() + ", inputVoltage, connectedComponents";
+	}
+    
+    @Override
+    public String toCSV() {
+    	return super.toCSV() + "," + inputVoltage.toString() + "," + connectedComponents.toString();
+    }
 
     @Override
     public final String toString() {

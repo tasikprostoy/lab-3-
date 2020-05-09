@@ -15,6 +15,16 @@ public class Led extends Component {
         super(producer, power, DeviceType.LED, maxVoltage, isWorking);
         this.color = color;
     }
+    
+    @Override
+    public String getHeaders() {
+    	return super.getHeaders() + ", color";
+	}
+    
+    @Override
+    public String toCSV() {
+    	return super.toCSV() + "," + color.toString();
+    }
 
     @Override
     public final String toString() {

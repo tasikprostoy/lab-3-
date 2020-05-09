@@ -31,15 +31,6 @@ public class DeviceManager {
 
     }
 
-    @Override
-    public final String toString() {
-        StringBuffer info = new StringBuffer("");
-        for (Device device : devices) {
-            info.append(device.toString());
-        }
-        return info + "\n";
-    }
-
     public DeviceManager() {
         devices = new LinkedList<Device>();
     }
@@ -64,11 +55,10 @@ public class DeviceManager {
         return devices;
     }
 
-    public final List<Device> filterByType(final DeviceType deviceType) {
+	public final List<Device> filterByType(final DeviceType deviceType) {
         List<Device> buffer = new LinkedList<Device>(devices);
         buffer.removeIf(device -> device.getDeviceType() != deviceType);
         return buffer;
-        //щоб уникнути видалення оригінальних данних:)
 
     }
 

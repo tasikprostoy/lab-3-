@@ -16,6 +16,16 @@ public abstract class Component extends Device {
 		this.maxVoltage = maxVoltage;
 		this.isWorking = isWorking;
     }
+    
+    @Override
+    public String getHeaders() {
+    	return super.getHeaders() + ", maxVoltage, isWorking";
+	}
+    
+    @Override
+    public String toCSV() {
+    	return super.toCSV() + "," + maxVoltage + "," + isWorking;
+    }
 
     public final double getMaxVoltage() {
 		return maxVoltage;

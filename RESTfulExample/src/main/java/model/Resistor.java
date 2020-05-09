@@ -14,6 +14,16 @@ public class Resistor extends Component {
         super(producer, power, DeviceType.RESISTOR, maxVoltage, isWorking);
         this.resist = resist;
     }
+    
+    @Override
+    public String getHeaders() {
+    	return super.getHeaders() + ", resist";
+    }
+    
+    @Override
+    public String toCSV() {
+    	return super.toCSV() + "," + resist;
+    }
 
     @Override
     public final String toString() {
